@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PINCELLO LOGIN</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="head_top">
+        <div class="conwrap">
+          <div class="top_menu">
+            <ul>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="join.html">회원가입</a></li>
+              <li><a href="login.html">주문조회</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="customer.html">고객센터</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gnb">
+        <div class="conwrap">
+          <h1>
+            <a href="index.html"><img src="images/logo.png" alt="pincello logo"></a>
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="history.html">핀첼로소개</a></li>
+              <li><a href="product.html">핀첼로제품</a></li>
+              <li><a href="carving.html">각인서비스</a></li>
+              <li><a href="news.html">NEWS</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <div class="btn_all" onclick="toggleCateBtn(this);">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class="nav_search">
+              <input type="text">
+              <a href="">
+                <img src="images/loupe.png" alt="search_icon">
+              </a>
+            </div>
+          </div>
+          <div class="allmenu">
+            <div class="menubox">
+              <h2>핀첼로소개</h2>
+              <ul>
+                <li><a href="history.html">핀첼로소개</a></li>
+              </ul>
+            </div>
+            <div class="menubox">
+              <h2>핀첼로제품</h2>
+              <ul>
+                <li><a href="product.html">로이텀</a></li>
+                <li><a href="product.html">만년필</a></li>
+                <li><a href="product.html">볼펜</a></li>
+                <li><a href="product.html">수성펜</a></li>
+                <li><a href="product.html">멀티펜</a></li>
+              </ul>
+            </div>
+            <div class="menubox menubox2">
+              <h2></h2>
+              <ul>
+                <li><a href="product.html">중성펜/젤펜</a></li>
+                <li><a href="product.html">형광펜</a></li>
+                <li><a href="product.html">붓펜/캘리펜</a></li>
+                <li><a href="product.html">마카/매직</a></li>
+                <li><a href="product.html">사인펜</a></li>
+              </ul>
+            </div>
+            <div class="menubox">
+              <h2>각인서비스</h2>
+              <ul>
+                <li><a href="carving.html">각인서비스</a></li>
+              </ul>
+            </div>
+            <div class="menubox">
+              <h2>NEWS</h2>
+              <ul>
+                <li><a href="news.html">NEWS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="wrap" class="wrapper">
+    <div id="container" class="con_login">
+      <div class="content">
+        <div class="logo_area">
+          <h2>로그인</h2>
+        </div>
+        <div class="loginWrap">
+          <ul class="tab_login clear">
+            <li class="is_on">
+              <a href="#login1" class="onBtn">회원 로그인</a>
+            </li>
+            <li>
+              <a href="#login2" class="onBtn">비회원 주문조회</a>
+            </li>
+          </ul>
+          <div class="box_login">
+            <div id="login1" class="loginCon">
+              <form name="loginForm" method="post" action="" onsubmit="">
+                <input type="hidden" name="target" value="main">
+                <input type="hidden" name="retURL" value="">
+                <input type="hidden" name="mallGb" valur="PIN">
+                <fieldset>
+                  <legend>로그인 정보 입력</legend>
+                  <div class="inp_login">
+                    <label for="chkId" class="lab_comment">아이디</label>
+                    <input type="text" name="memid" maxlength="10" id="chkId" class="form_login" placeholder="아이디를 입력해주세요">
+                    <!-- <span class="search"></span> -->
+                  </div>
+                  <div class="inp_login inp_pw">
+                    <label for="chkPw" class="lab_comment">비밀번호</label>
+                    <input type="password" name="pw" maxlength="15" id="chkPw" class="form_login" placeholder="비밀번호를 입력해주세요">
+                    <!-- <span class="searchClear"></span> -->
+                  </div>
+                  <div class="opt_login">
+                    <div class="auto_save">
+                      <label class="inp_chk" for="saveLogin">
+                        <input type="checkbox" id="saveLogin" name="save_id" onclick="">
+                        <span>아이디 저장</span>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn_login on login" id="loginNtn" onclick="loginBtn();">로그인</button>
+                </fieldset>
+              </form>
+              <ul class="list_loginEtc clear">
+                <li><a class="btn_findKey" href="">아이디찾기</a></li>
+                <li><a class="btn_findKey" href="">비밀번호찾기</a></li>
+                <li><a class="btn_findKey" href="join.html">회원가입</a></li>
+              </ul>
+              <ul class="snsLogin">
+                <li>
+                  <a href="https://www.naver.com/">
+                    <img src="images/logo_naver.png" alt="네이버 아이콘">
+                    네이버 로그인
+                  </a>
+                <li>
+                  <a href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fcategory%3D25">
+                    <img src="images/logo_kakao.png" alt="카카오 아이콘">
+                    카카오 로그인
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="login2" class="loginCon">
+              <form id="nonuserLoginForm" name="nonuserLoginForm" method="post" action="">
+                <fieldset>
+                  <legend>로그인 정보 입력</legend>
+                  <div class="inp_login">
+                    <label for="chkId1" class="lab_comment">주문번호</label>
+                    <input type="text" name="orderNum" id="chkId1" class="form_login" placeholder="주문번호를 입력해주세요" maxlength="12" value="">
+                    <!-- <span class="search"></span> -->
+                  </div>
+                  <div class="inp_login inp_pw">
+                    <label for="chkPw1" class="lab_comment">비밀번호</label>
+                    <input type="password" name="password" maxlength="4" id="chkPw1" class="form_login" placeholder="비밀번호를 입력해주세요" value="">
+                    <!-- <span class="searchClear"></span> -->
+                  </div>
+                  <p class="txt_inquiry">- 비회원으로 상품을 구매하신 경우에만 조회 가능합니다.</p>
+                  <button type="button" class="btn_login off invoice" onclick="noUserLogin();">주문배송조회</button>
+                </fieldset>
+              </form>
+              <div class="box_register">
+                <p>아직 핀첼로 회원이 아니세요?</p>
+                <a href="join.html" class="btnJoin" onclick="joinUs();">핀첼로 회원가입</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="util">
+      <div class="util_cont">
+        <div class="foot_top">
+          <h1><img src="images/logo_footer.png" alt="footer logo"></h1>
+          <ul class="fm">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보취급방침</a></li>
+            <li><a href="">제휴/광고</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이메일수집거부</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="inner">
+      <div class="cont left">
+        <h3>(주)핀첼로</h3>
+        <span>대표이사 : 박주미</span>
+        <span>서울시 종로구 대학고 57 홍익대학교 대학로캠포스 교육동 14층</span>
+        <span>사업자등록번호 : 211-87-00620</span><br>
+        <span>통신판매업 신고 : 제 01-1968호 사업자 정보확인</span>
+        <span>개인정보책임자 : 이문세</span>
+        <span>소비자피해보상보험 SGI 서울보증 서비스 가입 사실 확인</span>
+        <address>COPYRIGHT (C)PINCELLO ALL RIGHTS RESERVED.</address>
+      </div>
+      <div class="cont middle">
+        <ul class="sns">
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="images/icon_instagram.png" alt="인스타그램" width="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="images/icon_facebook.png" alt="페이스북" height="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="images/icon_youtube.png" alt="유투브">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cont right">
+        <div class="tit">CUSTOMER</div>
+        <div class="cc_tel">080-022-0153</div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+  // 로그인 탭
+  let loginTabList = document.querySelectorAll('.loginWrap .tab_login li');
+  let loginContents = document.querySelectorAll('.loginWrap .box_login .loginCon');
+  let activeLoginCont = ''; // 현재 활성화 된 컨텐츠 (기본:#login1 활성화)
+
+  for(var i = 0; i < loginTabList.length; i++){
+    loginTabList[i].querySelector('.onBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      for(var j = 0; j < loginTabList.length; j++){
+        // 나머지 버튼 클래스 제거
+        loginTabList[j].classList.remove('is_on');
+
+        // 나머지 컨텐츠 display:none 처리
+        loginContents[j].style.display = 'none';
+      }
+
+      // 버튼 관련 이벤트
+      this.parentNode.classList.add('is_on');
+
+      // 버튼 클릭시 컨텐츠 전환
+      activeLoginCont = this.getAttribute('href');
+      document.querySelector(activeLoginCont).style.display = 'block';
+    });
+  }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+#container{
+  overflow: hidden;
+  width: 100%;
+  margin-top:116px;
+}
+.contents{
+  margin-bottom: 70px;
+}
+.pagetitle{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background: url(../images/page_titleimg1.jpg) no-repeat center;
+}
+.pn3{
+  background: url(../images/page_titleimg3.jpg) no-repeat center;
+}
+.pagetitle h2{
+  padding-top: 150px;
+  font-size: 34px;
+  color: #fff;
+  font-weight:500;
+}
+.pagetitle h2:after{
+  display:block;
+  content:'';
+  width:30px;
+  height:4px;
+  margin: 5px auto 10px;
+  background: #c40f39;
+}
+.pagetitle p{
+  font-size: 15px;
+  color:#fff;
+  font-weight:300;
+}
+.title1{
+  margin-top:90px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color:#000;
+  text-align:center;
+  letter-spacing: 2px;
+}
+.title1 span{
+  color: #c40f39;
+}
+.title1 span:after{
+  display:block;
+  content:'';
+  background: #c40f39;
+  width:30px;
+  height:4px;
+  margin:5px auto 95px;
+}
+.carving_form{
+  background: url(../images/caving_service_img.jpg) no-repeat center;
+  padding-bottom: 100px;
+}
+.carving_wrap{
+  width: 1440px;
+  height: 850px;
+  margin:0 auto;
+  padding: 95px 100px 0;
+}
+.carving_form .apply {
+  width: 1440px;
+  height: 700px;
+  margin:0 auto;
+  padding-top: 95px;
+}
+.carving_form .apply h4{
+  margin-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight:500;
+  color:#fff;
+}
+.carving_form .apply .formarea{
+  overflow: hidden;
+}
+.carving_form .apply .formarea .fl{
+  float: left;
+  width: 700px;
+}
+.carving_form .apply .formarea .fl>div{
+  margin-bottom: 15px;
+}
+.ap_tit{position: relative;}
+.carving_form .apply .formarea .fl input[type="text"]{
+  width: 100%;
+  padding: 0 4%;
+  height: 70px;
+  line-height:70px;
+  outline:0;
+  background: rgba(255,255,255,0.8);
+  border: 1px solid #b7b6b5;
+  font-size:18px;
+}
+.ap_tit label{
+  position: absolute;
+  left:4.1%;
+  top:22px;
+  /* font-size: 18px;
+  color:#777; */
+  text-indent: -9999px;
+}
+.carving_form .apply .formarea .fl textarea{
+  width: 100%;
+  padding: 20px 4%;
+  height: 76px;
+  outline:0;
+  background: rgba(255,255,255,0.8);
+  border: 1px solid #b7b6b5;
+  font-size:18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  resize: none;;
+}
+.filebox{
+  position:relative;
+}
+.filebox label{
+  display:inline-block;
+  width: 100%;
+  padding:20px 4%;
+  vertical-align: middle;
+  background:rgba(255,255,255,0.8) url(../images/file_up_btn.jpg) 96% center no-repeat;
+  cursor: pointer;
+  border:1px solid #b7b6b5;
+  font-size: 18px;
+  color:#777;
+}
+.filebox input[type="file"]{
+  position:absolute;
+  top:12px;
+  right: 10px;
+  width: 1px;
+  height: 0;
+  margin: -1px;
+  overflow: hidden;;
+  border:none;
+  clip:rect(0,0,0,0);
+}
+.carving_form .apply .formarea .fl .chkarea{
+  margin-top: 10px;
+  font-size: 15px;
+  color:#fff;
+  font-weight: 300;
+}
+
+.carving_form .apply .formarea .fr{
+  float: right;
+  width: 700px;
+}
+.carving_form .apply .formarea .fr:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.carving_form .apply .formarea .fr .textarea{
+  width: 92%;
+  padding: 20px 4% 54px;
+  background: rgba(255,255,255,0.9);
+  font-size: 16px;
+  line-height: 180%;
+}
+.carving_form .apply .formarea .fr .textarea h4{
+  font-size: 25px;
+  font-weight:bold;
+  line-height: 2;
+  margin: 28px 0 15px;
+  color:#333;
+  text-align: center;
+}
+.fr .textarea ol{
+  width: 600px;
+  margin: 0 auto;
+}
+.fr .textarea li span{
+  display: inline-block;
+  width: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 8px;
+}
+.fr .textarea li{
+  line-height:1.4;
+  margin-bottom: 6px;
+  word-break: break-all;
+}
+.fr .textarea li strong{
+  color:#c40f39;
+}
+.fr .textarea li p{
+  text-indent: 27px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.btn_send{
+  padding-top:100px;
+  text-align: center;
+}
+.btn_send a{
+  display: inline-block;
+  width: 380px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  background: rgba(255,255,255,0.8);
+  color:#c40f39;
+  transition: all .3s;
+}
+.btn_send a:hover{
+  background: #c40f39;
+  color:#fff;
+}

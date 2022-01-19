@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/inquiry.css">
+  <title>PINCELLO MAIN</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="head">
+        <div class="head_top">
+          <div class="conwrap">
+            <div class="top_menu">
+              <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">주문조회</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="customer.html">고객센터</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="gnb">
+          <div class="conwrap">
+            <h1>
+              <a href="index.html"><img src="images/logo.png" alt="pincello logo"></a>
+            </h1>
+            <nav>
+              <ul>
+                <li><a href="history.html">핀첼로소개</a></li>
+                <li><a href="product.html">핀첼로제품</a></li>
+                <li><a href="carving.html">각인서비스</a></li>
+                <li><a href="news.html">NEWS</a></li>
+              </ul>
+            </nav>
+            <div class="search">
+              <div class="btn_all" onclick="toggleCateBtn(this);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div class="nav_search">
+                <input type="text">
+                <a href="">
+                  <img src="images/loupe.png" alt="search_icon">
+                </a>
+              </div>
+            </div>
+            <div class="allmenu">
+              <div class="menubox">
+                <h2>핀첼로소개</h2>
+                <ul>
+                  <li><a href="history.html">핀첼로소개</a></li>
+                </ul>
+              </div>
+              <div class="menubox">
+                <h2>핀첼로제품</h2>
+                <ul>
+                  <li><a href="product.html">로이텀</a></li>
+                  <li><a href="product.html">만년필</a></li>
+                  <li><a href="product.html">볼펜</a></li>
+                  <li><a href="product.html">수성펜</a></li>
+                  <li><a href="product.html">멀티펜</a></li>
+                </ul>
+              </div>
+              <div class="menubox menubox2">
+                <h2></h2>
+                <ul>
+                  <li><a href="product.html">중성펜/젤펜</a></li>
+                  <li><a href="product.html">형광펜</a></li>
+                  <li><a href="product.html">붓펜/캘리펜</a></li>
+                  <li><a href="product.html">마카/매직</a></li>
+                  <li><a href="product.html">사인펜</a></li>
+                </ul>
+              </div>
+              <div class="menubox">
+                <h2>각인서비스</h2>
+                <ul>
+                  <li><a href="carving.html">각인서비스</a></li>
+                </ul>
+              </div>
+              <div class="menubox">
+                <h2>NEWS</h2>
+                <ul>
+                  <li><a href="news.html">NEWS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="slideshow_container">
+      <div class="mySlides fade">
+        <a href=""><img src="images/main_banner_0.jpg" style="width:100%"></a>
+        <!-- <div class="ban_desc">
+          <p class="txt">다채로운 표현의 시작, 핀첼로 라이브 컬러</p>
+        </div> -->
+      </div>
+      <div class="mySlides fade">
+        <a href=""><img src="images/main_banner_1.jpg" style="width:100%"></a>
+        <!-- <div class="ban_desc">
+          <p class="txt">기록이 필요한 순간, 153 네오 만년필</p>
+        </div> -->
+      </div>
+      <div class="mySlides fade">
+        <a href=""><img src="images/main_banner_4.jpg" style="width:100%"></a>
+        <!-- <div class="ban_desc">
+          <p class="txt">상큼한 시럽을 연상시키는, 모나미 시그니처 볼펜</p>
+        </div> -->
+      </div>
+      <a class="prev" onclick="plusSlides(-1);"></a>
+      <a class="next" onclick="plusSlides(1);"></a>
+      <div class="slide_pagi">
+        <span class="dot" onclick="currentSlide(1);"></span>
+        <span class="dot" onclick="currentSlide(2);"></span>
+        <span class="dot" onclick="currentSlide(3);"></span>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <div class="contents">
+      <div class="new">
+        <div class="conwrap">
+          <div class="tit">
+            <h2>NEWS
+              <br>
+              ARRIVALS
+            </h2>
+          </div>
+          <div class="toparea">
+            <div class="box new1">
+              <a href=""><img src="images/new_img1.jpg" alt="" width="418"></a>
+              <div class="ondiv">
+                <div class="align">
+                  <div class="cate">BALLPOINT PEN</div>
+                  <div class="name">롤링펜 S</div>
+                </div>
+              </div>
+            </div>
+            <div class="box new2">
+              <a href=""><img src="images/new_img2.jpg" alt="" width="880"></a>
+              <div class="ondiv">
+                <div class="align">
+                  <div class="cate">WATER BASED MARKER</div>
+                  <div class="name">프러스펜 3000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btmarea">
+            <div class="box new3">
+              <a href=""><img src="images/new_img3.jpg" alt="" width="418"></a>
+              <div class="ondiv">
+                <div class="align">
+                  <div class="cate">BRUSH PEN</div>
+                  <div class="name">컬러 트윈 브러쉬 펜</div>
+                </div>
+              </div>
+            </div>
+            <div class="box new3">
+              <a href=""><img src="images/new_img4.jpg" alt="" width="440"></a>
+              <div class="ondiv">
+                <div class="align">
+                  <div class="cate">BALLPOINT PEN</div>
+                  <div class="name">플립2</div>
+                </div>
+              </div>
+            </div>
+            <div class="box new3">
+              <a href=""><img src="images/new_img5.jpg" alt="" width="418"></a>
+              <div class="ondiv">
+                <div class="align">
+                  <div class="cate">FOUNTAIN PEN</div>
+                  <div class="name">142 네오 만년필 EF</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="tit">
+          <h2>지금 많이 보고 있는 상품</h2>
+        </div>
+        <div class="viewProduct">
+          <div class="items type_thumb item_hover item_342">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="thumbnail">
+                    <img src="images/most_view_img1.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <p class="name">에프엑스 제타 다색&세트</p>
+                    <div class="price">
+                      <span class="sum">10,000</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumbnail">
+                    <img src="images/most_view_img2.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <p class="name">XL 매트 그레이&골드 볼펜</p>
+                    <div class="price">
+                      <span class="sum">25,200</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumbnail">
+                    <img src="images/most_view_img3.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <p class="name">FLIP3(플립)3색</p>
+                    <div class="price">
+                      <span class="sum">4,000</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumbnail">
+                    <img src="images/most_view_img4.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <p class="name">154 펄(Pearl)</p>
+                    <div class="price">
+                      <span class="sum">5,000</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumbnail">
+                    <img src="images/most_view_img5.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <p class="name">스포츠 스카이 볼펜</p>
+                    <div class="price">
+                      <span class="sum">23,000</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumbnail">
+                    <img src="images/most_view_img6.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <p class="name">어번 프리미엄 화이트 만년필</p>
+                    <div class="price">
+                      <span class="sum">52,000</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumbnail">
+                    <img src="images/most_view_img7.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <p class="name">틴크 수성심 블랙 실버</p>
+                    <div class="price">
+                      <span class="sum">6,300</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumbnail">
+                    <img src="images/most_view_img8.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <p class="name">카웨코 만년필 릴리풋</p>
+                    <div class="price">
+                      <span class="sum">110,600</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="only">
+        <div class="conwrap">
+          <div class="ftLt">
+            <div class="tit">
+              <h2>
+                ONLY
+                <br>
+                BRAND
+              </h2>
+            </div>
+            <div class="tab_menu">
+              <ul class="tab_name">
+                <li class="current"><a class="tabBrn" href="#tab1">라이플페이퍼</a></li>
+                <li><a class="tabBrn" href="#tab2">아이우에오</a></li>
+              </ul>
+              <div class="tab_container">
+                <div id="tab1" class="tab_cont">
+                  <div class="main_bnr">
+                    <a href="">
+                      <img src="images/only_img2.jpg" alt="" width="662">
+                    </a>
+                  </div>
+                  <div class="items type_thumb item_hover item_350">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <div class="thumnail">
+                            <img src="images/only_img3.jpg" alt="" width="318">
+                          </div>
+                          <div class="desc">
+                            <p class="name">유니크 잉크펜 볼펜</p>
+                            <div class="price">
+                              <span class="sum">9,100</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <div class="thumnail">
+                            <img src="images/only_img4.jpg" alt="" width="318">
+                          </div>
+                          <div class="desc">
+                            <p class="name">디즈니 캐릭터 볼펜</p>
+                            <div class="price">
+                              <span class="sum">16,000</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="tab2" class="tab_cont">
+                  <div class="main_bnr">
+                    <a href="">
+                      <img src="images/only_img5.jpg" alt="" width="662">
+                    </a>
+                  </div>
+                  <div class="items type_thumb item_hover item_350">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <div class="thumnail">
+                            <img src="images/only_img6.jpg" alt="" width="318">
+                          </div>
+                          <div class="desc">
+                            <p class="name">카렌다쉬 849 메탈 볼펜</p>
+                            <div class="price">
+                              <span class="sum">45,000</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <div class="thumnail">
+                            <img src="images/only_img7.jpg" alt="" width="318">
+                          </div>
+                          <div class="desc">
+                            <p class="name">라이프앤피스 볼펜</p>
+                            <div class="price">
+                              <span class="sum">4,400</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ftRt">
+            <div class="b_bnr">
+              <a href="">
+                <img src="images/only_img.gif" alt="" width="615">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bbs">
+        <div class="conwrap">
+          <div class="news">
+            <div class="tit">
+              <h2>PINCELLO NEWS</h2>
+              <a href="news.html">MORE</a>
+            </div>
+            <ul class="news_lists">
+              <li class="first">
+                <div class="thum">
+                  <a href="">
+                    <img src="images/news_img1.jpg" alt="" width="370">
+                  </a>
+                </div>
+                <div class="txt">
+                  <a href="">
+                    <div class="sbj">핀첼로, 사이드 노크 타입 펜 '클리키(CLICK..)</div>
+                    <p>핀첼로 사이드 노트 타입 볼펜 '클리키(CLICK)' 출시 사이드 노크 방식으로, 손에 귀기 좋은 바디 두께로 함께 편안한 그립감도 함께 제공하는 것이 특징이다. 필기 시
+                      방해되지 않는 위치에 노크가 있어 사용하기 편리하며, 0.5mm 필기선으로 부드럽고 유연한 필기감을 느낄 수 있다.</p>
+                    <span class="date">2021-08-31</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="">핀첼로, '제44회 핀첼로 핀체르떼 어린이 미술대화</a>
+                <span class="date">2021-08-29</span>
+              </li>
+              <li>
+                <a href="">핀첼로, 광복절 스페셜 에디션 '153 ID 8.15' 라이브커머스 진행</a>
+                <span class="date">2021-08-15</span>
+              </li>
+              <li>
+                <a href="">핀첼로, 물에 번지지 않는 '프러스펜 3000 피그먼트' 출시 </a>
+                <span class="date">2021-08-10</span>
+              </li>
+              <li>
+                <a href="">핀첼로X하비풀, 캘리그라피 온라인 클래스 오픈 </a>
+                <span class="date">2021-08-01</span>
+              </li>
+              <li>
+                <a href="">모나미, 신제품 'MIX 시리즈' 라이브커머스에서 단복 선공개</a>
+                <span class="date">2021-07-27</span>
+              </li>
+            </ul>
+          </div>
+          <div class="inquiry">
+            <div class="tit">
+              <h2>1 : 1 문의</h2>
+            </div>
+            <p>궁금한 사항은 문의하세요.
+              <br>
+              고객센터 운영시간에 순차적으로 답변해 드립니다.
+            </p>
+            <a onclick="document.getElementById('id01').style.display='block'">1 : 1 문의 하러 가기</a>
+          </div>
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcon">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <div class="inquCon">
+                <label for="uname">이름</label>
+                <input type="text" placeholder="이름" name="uname" required>
+                <label for="uemail">이메일</label>
+                <input type="text" placeholder="이메일" name="uemail" required>
+                <label for="uphone">연락처</label>
+                <input type="text" placeholder="연락처" name="uphone" required>
+                <label for="utitle">제목</label>
+                <input type="text" placeholder="제목" name="utitle" required>
+                <label for="ucontent">내용</label>
+                <textarea type="text" placeholder="내용" name="ucontent"></textarea> 
+                <button class="sdBtn" type="submit">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction();" id="btnTop" title="Go to Top"></button>
+  <footer>
+    <div class="util">
+      <div class="util_cont">
+        <div class="foot_top">
+          <h1><img src="images/logo_footer.png" alt="footer logo"></h1>
+          <ul class="fm">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보취급방침</a></li>
+            <li><a href="">제휴/광고</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이메일수집거부</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="inner">
+      <div class="cont left">
+        <h3>(주)핀첼로</h3>
+        <span>대표이사 : 박주미</span>
+        <span>서울시 종로구 대학고 57 홍익대학교 대학로캠포스 교육동 14층</span>
+        <span>사업자등록번호 : 211-87-00620</span><br>
+        <span>통신판매업 신고 : 제 01-1968호 사업자 정보확인</span>
+        <span>개인정보책임자 : 이문세</span>
+        <span>소비자피해보상보험 SGI 서울보증 서비스 가입 사실 확인</span>
+        <address>COPYRIGHT (C)PINCELLO ALL RIGHTS RESERVED.</address>
+      </div>
+      <div class="cont middle">
+        <ul class="sns">
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="images/icon_instagram.png" alt="인스타그램" width="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="images/icon_facebook.png" alt="페이스북" height="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="images/icon_youtube.png" alt="유투브">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cont right">
+        <div class="tit">CUSTOMER</div>
+        <div class="cc_tel">080-022-0153</div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

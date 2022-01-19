@@ -1,0 +1,275 @@
+#container{
+  overflow: hidden;
+  width: 100%;
+  margin-top:116px;
+  padding-bottom: 100px;
+}
+.content{
+}
+.pagetitle{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background: url(../images/page_titleimg1.jpg) no-repeat center;
+}
+.pagetitle h2{
+  padding-top: 150px;
+  font-size: 34px;
+  color: #fff;
+  font-weight:500;
+}
+.pagetitle h2:after{
+  display:block;
+  content:'';
+  width:30px;
+  height:4px;
+  margin: 5px auto 10px;
+  background: #c40f39;
+}
+.pagetitle p{
+  font-size: 15px;
+  color:#fff;
+  font-weight:300;
+}
+.title1{
+  margin-top:90px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color:#000;
+  text-align:center;
+  letter-spacing: 2px;
+}
+.title1 span{
+  color: #c40f39;
+}
+.title1 span:after{
+  display:block;
+  content:'';
+  background: #c40f39;
+  width:30px;
+  height:4px;
+  margin:5px auto 95px;
+}
+/* .wrap_con{
+  width: 100%;
+} */
+.history{
+  position:relative;
+  width:100%;
+  margin: 0 auto;
+  height: 3030px;
+}
+.history .bgarea1{
+  position: absolute;
+  left:0;
+  top:505px;
+  width: 100%;
+  height:574px;
+  background: #f8f8f8;
+  /* z-index:1; */
+}
+.history .bgarea2{
+  position: absolute;
+  left:0;
+  top:1356px;
+  width: 100%;
+  height:651px;
+  background: #f8f8f8;
+  /* z-index:1; */
+}
+.history .bgarea3{
+  position: absolute;
+  left:0;
+  top:2509px;
+  width: 100%;
+  height:406px;
+  background: #f8f8f8;
+  /* z-index:1; */
+}
+.history .center_line{
+  position: absolute;
+  left:50%;
+  top:0;
+  width:1px;
+  height: 100%;
+  background: #ddd;
+  /* z-index:2; */
+}
+.history .deco1{
+  position: absolute;
+  right: 50%;
+  top:168px;
+  margin-right:60px;
+  /* z-index: 2;*/
+}
+.history .deco2{
+  position: absolute;
+  left: 50%;
+  top: 661px;
+  margin-left:60px;
+}
+.history .deco3{
+  position: absolute;
+  right: 50%;
+  top:1162px;
+  margin-right:60px;
+}
+.history .deco4{
+  position: absolute;
+  left: 50%;
+  top: 1660px;
+  margin-left:60px;
+}
+.history .deco5{
+  position: absolute;
+  right: 50%;
+  top: 2162px;
+  margin-right:60px;
+}
+.history .deco6{
+  position: absolute;
+  left: 50%;
+  top: 2666px;
+  margin-left:60px;
+}
+.history .history_box{
+  position: absolute;
+  width: 50%;
+  /* z-index:4; */
+}
+.history .history_box:nth-child(1){
+  left:50%;
+  top:0;
+}
+.history .history_box.tl{
+  text-align: left;
+}
+.history .history_box .titlearea{
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom:25px;
+  border-bottom:1px solid #ddd;
+}
+.history .history_box.tl .titlearea{
+  padding-left:60px;
+}
+.history .history_box .titlearea:after{
+  display:block;
+  content:'';
+  clear:both;
+}
+.history .history_box .titlearea .tit{
+  font-size: 33px;
+  color:#333;
+  line-height:130%;
+  font-weight: 300;
+}
+.history .history_box.tl .titlearea .tit{
+  float:left;
+}
+.history .history_box .titlearea .tit span{
+  color:#c40f39;
+}
+.history .history_box .titlearea .year{
+  position:absolute;
+  top: 62px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px
+}
+.history .history_box:nth-child(1) .year{
+  left: 240px;
+}
+.history .history_box.tl .titlearea .red{
+  position:absolute;
+  left:-2px;
+  bottom: -3px;
+  width: 5px;
+  height: 5px;
+  background: #c40f39;
+}
+.history .history_box dl{
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.history .history_box.tl dl{
+  padding-left:60px;
+}
+.history .history_box dl dt{
+  width: 54px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color:#c40f39;
+  font-weight: 500;
+  line-height: 130%;
+}
+.history .history_box.tl dl dt{
+  float:left;
+}
+.history .history_box dl dd{
+  font-size: 14px;
+  color:#777;
+}
+.history .history_box.tl dl dd{
+  float:none;
+}
+.history .history_box:nth-child(2){
+  position: absolute;
+  right:50%;
+  top:553px;
+}
+.history .history_box.tr{
+  text-align: right;
+}
+.history .history_box.tr .titlearea{
+  padding-right:60px;
+}
+.history .history_box:nth-child(2) .year{
+  right: 300px;
+} 
+.history .history_box.tr .titlearea .red{
+  position:absolute;
+  right:-3px;
+  bottom: -3px;
+  width: 5px;
+  height: 5px;
+  background: #c40f39;
+}
+.history .history_box.tr dl{
+  padding-right:60px;
+}
+.history .history_box.tr dl dt{
+  float:right;
+}
+.history .history_box:nth-child(3){
+  position: absolute;
+  left:50%;
+  top:1058px;
+}
+.history .history_box:nth-child(3) .year{
+  left: 325px;
+} 
+.history .history_box:nth-child(4){
+  position: absolute;
+  right:50%;
+  top: 1553px;
+}
+.history .history_box:nth-child(4) .year{
+  right: 180px;
+} 
+.history .history_box:nth-child(5){
+  position: absolute;
+  left:50%;
+  top: 2056px;
+}
+.history .history_box:nth-child(5) .year{
+  left: 170px;
+} 
+.history .history_box:nth-child(6){
+  position: absolute;
+  right:50%;
+  top: 2555px;
+}
+.history .history_box:nth-child(6) .year{
+  right: 170px;
+} 

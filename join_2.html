@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/join2.css">
+  <title>PINCELLO LOGIN</title>
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="head_top">
+        <div class="conwrap">
+          <div class="top_menu">
+            <ul>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="join.html">회원가입</a></li>
+              <li><a href="login.html">주문조회</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="customer.html">고객센터</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gnb">
+        <div class="conwrap">
+          <h1>
+            <a href="index.html"><img src="images/logo.png" alt="pincello logo"></a>
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="history.html">핀첼로소개</a></li>
+              <li><a href="product.html">핀첼로제품</a></li>
+              <li><a href="carving.html">각인서비스</a></li>
+              <li><a href="news.html">NEWS</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <div class="btn_all" onclick="toggleCateBtn(this);">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class="nav_search">
+              <input type="text">
+              <a href="">
+                <img src="images/loupe.png" alt="search_icon">
+              </a>
+            </div>
+          </div>
+          <div class="allmenu">
+            <div class="menubox">
+              <h2>핀첼로소개</h2>
+              <ul>
+                <li><a href="history.html">핀첼로소개</a></li>
+              </ul>
+            </div>
+            <div class="menubox">
+              <h2>핀첼로제품</h2>
+              <ul>
+                <li><a href="product.html">로이텀</a></li>
+                <li><a href="product.html">만년필</a></li>
+                <li><a href="product.html">볼펜</a></li>
+                <li><a href="product.html">수성펜</a></li>
+                <li><a href="product.html">멀티펜</a></li>
+              </ul>
+            </div>
+            <div class="menubox menubox2">
+              <h2></h2>
+              <ul>
+                <li><a href="product.html">중성펜/젤펜</a></li>
+                <li><a href="product.html">형광펜</a></li>
+                <li><a href="product.html">붓펜/캘리펜</a></li>
+                <li><a href="product.html">마카/매직</a></li>
+                <li><a href="product.html">사인펜</a></li>
+              </ul>
+            </div>
+            <div class="menubox">
+              <h2>각인서비스</h2>
+              <ul>
+                <li><a href="carving.html">각인서비스</a></li>
+              </ul>
+            </div>
+            <div class="menubox">
+              <h2>NEWS</h2>
+              <ul>
+                <li><a href="news.html">NEWS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="wrap" class="wrapper">
+    <div id="container" class="con_login">
+      <div class="content member">
+        <div class="logo_area">
+          <h2>회원가입</h2>
+        </div>
+        <div class="join-step2">
+          <form action="" name="joinForm" method="post" onsubmit="">
+            <fieldset class="joinform-field">
+              <legend class="hide">회원정보 입력</legend>
+              <h3>회원기본정보</h3>
+              <p class="txt-need">
+                <em>*<span class="hide">필수</span></em>
+                표시는 반드시 입력하셔야 하는 항목 입니다.
+              </p>
+              <ul>
+                <li>
+                  <label>
+                    <strong>
+                      이름
+                      <em class="bl-need">*<span class="hide">필수</span></em>
+                    </strong>
+                    <input type="text" name="memberNm" id="memberNm" placeholder="이름 입력" title="이름 입력" maxlength="10">
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <strong>
+                      아이디
+                      <em class="bl-need">*<span class="hide">필수</span></em>
+                    </strong>
+                    <input type="text" class="in-id" name="memberId" id="memberId" placeholder="5~1자, 영문, 숫자 또는 영문+숫자 조합" title="아이디 입력" maxlength="16">
+                    <button type="button" class="btn-white">중복확인</button>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <strong>
+                      비밀번호
+                      <em class="bl-need">*<span class="hide">필수</span></em>
+                    </strong>
+                    <input type="password" name="memberPwd" id="memberPwd" placeholder="영문/숫자/특수문자 중 2가지 조합, 6~16자 이내" title="비밀번호 입력" maxlength="16">
+                  </label>
+                  <ul class="infotxt">
+                    <li>6~16자 이내, 영문 대/소문자, 숫자, 특수문자 중 2가지 조합으로 사용해주세요.
+                      <br>
+                      가능 특수문자 : ! @ # $ % ^ ? _ ~
+                    </li>
+                    <li>아이디와 동일한 비밀번호는 사용할 수 없습니다.</li>
+                  </ul>
+                </li>
+                <li>
+                  <label>
+                    <strong>
+                      비밀번호확인
+                      <em class="bl-need">*<span class="hide">필수</span></em>
+                    </strong>
+                    <input type="password" name="memberPwdChk" id="memberPwdChk" placeholder="비밀번호 재입력" title="비밀번호 재입력" maxlength="16">
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <strong>
+                      이메일
+                      <em class="bl-need">*<span class="hide">필수</span></em>
+                    </strong>
+                    <input type="text" class="in-email" name="memberEmail" id="memberEmail" placeholder="이메일 입력" title="이메일 입력" maxlength="50">
+                  </label>
+                  <button type="button" class="btn-white">중복확인</button>
+                </li>
+                <li>
+                  <label>
+                    <strong>
+                      휴대번호
+                      <em class="bl-need">*<span class="hide">필수</span></em>
+                    </strong>
+                    <input type="text" name="memberHp" id="memberHp" placeholder="숫자만 입력(11자리)" title="휴대번호 입력" maxlength="11">
+                  </label>
+                </li>
+                <li class="bar">
+                  <label>
+                    <strong>생년월일</strong>
+                    <input type="text" name="birthDate" id="birthDate" placeholder="숫자만 입력(8자리)" title="생년 월일 입력" maxlength="8">
+                  </label>
+                </li>
+                <li>
+                  <div class="txt-agree">
+                    <strong>수신동의</strong>
+                    <label>
+                      <input type="checkbox" class="small" id="smsChk">
+                      <span>SMS를 통한 상품 및 이벤트 정보 수신에 동의합니다. [선택]</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" class="small" id="mailChk">
+                      <span>이메일을 통한 상품 및 이벤트 정보 수신에 동의합니다. [선택]</span>
+                    </label>
+                    <ul class="infotxt">
+                      <li>
+                        SMS 및 이메일 수신동의와 무관하게 주문결제/회원 관련 안내 메일/문자는 발송되며
+                        <br>
+                        수신미동의 시 쇼핑몰 이용에 제약은 없습니다.
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <p>
+                <label>
+                  <input type="checkbox" class="small" id="ageChk">
+                  <span>만 14세 이상입니다.</span>
+                </label>
+                <br>
+                <em>*</em>
+                14세 미만의 어린이는 보호자 계정의 마이페이지> 회원정보수정에서 등록할 수 있습니다.
+              </p>
+              <div class="btn-area">
+                <button type="button" class="btn-white">취소</button>
+                <button type="button" class="btn-black">확인</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="util">
+      <div class="util_cont">
+        <div class="foot_top">
+          <h1><img src="images/logo_footer.png" alt="footer logo"></h1>
+          <ul class="fm">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보취급방침</a></li>
+            <li><a href="">제휴/광고</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이메일수집거부</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="inner">
+      <div class="cont left">
+        <h3>(주)핀첼로</h3>
+        <span>대표이사 : 박주미</span>
+        <span>서울시 종로구 대학고 57 홍익대학교 대학로캠포스 교육동 14층</span>
+        <span>사업자등록번호 : 211-87-00620</span><br>
+        <span>통신판매업 신고 : 제 01-1968호 사업자 정보확인</span>
+        <span>개인정보책임자 : 이문세</span>
+        <span>소비자피해보상보험 SGI 서울보증 서비스 가입 사실 확인</span>
+        <address>COPYRIGHT (C)PINCELLO ALL RIGHTS RESERVED.</address>
+      </div>
+      <div class="cont middle">
+        <ul class="sns">
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="images/icon_instagram.png" alt="인스타그램" width="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="images/icon_facebook.png" alt="페이스북" height="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="images/icon_youtube.png" alt="유투브">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cont right">
+        <div class="tit">CUSTOMER</div>
+        <div class="cc_tel">080-022-0153</div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product.css">
+  <title>PINCELLO PRODUCT</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="head">
+        <div class="head_top">
+          <div class="conwrap">
+            <div class="top_menu">
+              <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">주문조회</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="customer.html">고객센터</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="gnb">
+          <div class="conwrap">
+            <h1>
+              <a href="index.html"><img src="images/logo.png" alt="pincello logo"></a>
+            </h1>
+            <nav>
+              <ul>
+                <li><a href="history.html">핀첼로소개</a></li>
+                <li><a href="product.html">핀첼로제품</a></li>
+                <li><a href="carving.html">각인서비스</a></li>
+                <li><a href="news.html">NEWS</a></li>
+              </ul>
+            </nav>
+            <div class="search">
+              <div class="btn_all" onclick="toggleCateBtn(this);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div class="nav_search">
+                <input type="text">
+                <a href="">
+                  <img src="images/loupe.png" alt="search_icon">
+                </a>
+              </div>
+            </div>
+            <div class="allmenu">
+              <div class="menubox">
+                <h2>핀첼로소개</h2>
+                <ul>
+                  <li><a href="history.html">핀첼로소개</a></li>
+                </ul>
+              </div>
+              <div class="menubox">
+                <h2>핀첼로제품</h2>
+                <ul>
+                  <li><a href="product.html">로이텀</a></li>
+                  <li><a href="product.html">만년필</a></li>
+                  <li><a href="product.html">볼펜</a></li>
+                  <li><a href="product.html">수성펜</a></li>
+                  <li><a href="product.html">멀티펜</a></li>
+                </ul>
+              </div>
+              <div class="menubox menubox2">
+                <h2></h2>
+                <ul>
+                  <li><a href="product.html">중성펜/젤펜</a></li>
+                  <li><a href="product.html">형광펜</a></li>
+                  <li><a href="product.html">붓펜/캘리펜</a></li>
+                  <li><a href="product.html">마카/매직</a></li>
+                  <li><a href="product.html">사인펜</a></li>
+                </ul>
+              </div>
+              <div class="menubox">
+                <h2>각인서비스</h2>
+                <ul>
+                  <li><a href="carving.html">각인서비스</a></li>
+                </ul>
+              </div>
+              <div class="menubox">
+                <h2>NEWS</h2>
+                <ul>
+                  <li><a href="news.html">NEWS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div id="container">
+    <div class="contents">
+      <div class="pagetitle pn2">
+        <h2>핀첼로 제품</h2>
+        <p>핀첼로는 당신의 행복한 기록화 함께합니다.</p>
+      </div>
+      <div class="pagetaps">
+        <ul class="m2">
+          <li><a href="">로이텀</a></li>
+          <li><a href="">만년필</a></li>
+          <li><a href="">볼펜</a></li>
+          <li><a href="">수성펜</a></li>
+          <li><a href="">멀티펜</a></li>
+          <li><a href="">중성펜/젤펜</a></li>
+          <li><a href="">형광펜</a></li>
+          <li><a href="">붓펜/젤리펜</a></li>
+          <li><a href="">마카/매직</a></li>
+          <li><a href="">사인펜</a></li>
+        </ul>
+      </div>
+      <div class="pen_wrapper">
+        <div class="pen_nav">
+          <ul>
+            <li class="font_t on"><a href="">High-end</a></li>
+            <li class="font_t"><a href="">Standard</a></li>
+          </ul>
+        </div>
+        <div class="pen_tab">
+          <div class="high_end_choice on">
+            <div class="title_v2">
+              <h2>만년필 베스트 상품</h2>
+            </div>
+            <ul class="prd_high_end">
+              <li>
+                <div class="desc">
+                  <p>선물용 10만원 이상</p>
+                  <!-- <span class="badge">HOT</span> -->
+                </div>
+                <div class="box">
+                  <a href="#"><img src="images/prd_high_img1.jpg" alt=""></a>
+                  <div class="ondiv" onclick="location.href='https://www.naver.com/';" >
+                    <div class="align">
+                      <div class="name">상품보러가기</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="desc">
+                  <p>선물용 10만원 이하</p>
+                  <!-- <span class="badge">HOT</span> -->
+                </div>
+                <div class="box">
+                  <a href="#"><img src="images/prd_high_img2.jpg" alt=""></a>
+                  <div class="ondiv" onclick="location.href='https://www.naver.com/';" >
+                    <div class="align">
+                      <div class="name">상품보러가기</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="hi_box">
+            <div class="prd_recommend">
+              <div class="title_v2">
+                <h2>에디터 추천 상품</h2>
+              </div>
+              <div class="vertical_list clear">
+                <div class="recom_item">
+                  <a href="">
+                    <div class="thum">
+                      <img src="images/recomd_img1.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                      <span class="brand_v2">CHARIC</span>
+                      <h3 class="prd_name">캐릭 2021 토토로_볼펜</h3>
+                      <p class="price font_t">
+                        <span class="percent">28%</span>
+                        5,200
+                        <span class="discount">7,200</span>
+                      </p>
+                    </div>
+                    <ul class="prdAction">
+                      <li class="postView">
+                        <a href=""><span>0</span></a>
+                      </li>
+                      <li class="wishView">
+                        <a href=""><span>0</span></a>
+                      </li>
+                    </ul>
+                  </a>
+                </div>
+                <div class="recom_item">
+                  <a href="">
+                    <div class="thum">
+                      <img src="images/recomd_img2.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                      <span class="brand_v2">LEUCH</span>
+                      <h3 class="prd_name">로이텀 2022 데일리 틱톡 펜 세트</h3>
+                      <p class="price font_t">
+                        <span class="percent">20%</span>
+                        8,900
+                        <span class="discount">10,900</span>
+                      </p>
+                    </div>
+                    <ul class="prdAction">
+                      <li class="postView">
+                        <a href=""><span>0</span></a>
+                      </li>
+                      <li class="wishView">
+                        <a href=""><span>0</span></a>
+                      </li>
+                    </ul>
+                  </a>
+                </div>
+                <div class="recom_item">
+                  <a href="">
+                    <div class="thum">
+                      <img src="images/recomd_img3.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                      <span class="brand_v2">CHARIC</span>
+                      <h3 class="prd_name">캐릭 2021 쿠마공원 4색볼펜 세트</h3>
+                      <p class="price font_t">
+                        <span class="percent">20%</span>
+                        4,900
+                        <span class="discount">8,900</span>
+                      </p>
+                    </div>
+                    <ul class="prdAction">
+                      <li class="postView">
+                        <a href=""><span>0</span></a>
+                      </li>
+                      <li class="wishView">
+                        <a href=""><span>0</span></a>
+                      </li>
+                    </ul>
+                  </a>
+                </div>
+                <div class="recom_item">
+                  <a href="">
+                    <div class="thum">
+                      <img src="images/recomd_img4.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                      <span class="brand_v2">KATO</span>
+                      <h3 class="prd_name">카토 KATO 멜로우 만년필 세트</h3>
+                      <p class="price font_t">
+                        <span class="percent">48%</span>
+                        9,900
+                        <span class="discount">19,000</span>
+                      </p>
+                    </div>
+                    <ul class="prdAction">
+                      <li class="postView">
+                        <a href=""><span>0</span></a>
+                      </li>
+                      <li class="wishView">
+                        <a href=""><span>0</span></a>
+                      </li>
+                    </ul>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="align_tab">
+            <ul class="col01">
+              <li class="active">
+                <a href="">
+                  <span>신상품순</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>판매량순</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="pd_list">
+            <ul>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img1.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">CARAND</p>
+                    <p class="tit">849 클레임 유어 스타일3 에디션 볼펜</p>
+                    <p class="price font_t">
+                      <span class="percent">35%</span>
+                      <span>33,750</span>
+                      <span class="discount">55,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img2.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">CARAND</p>
+                    <p class="tit">849 클레임 유어 스타일3 에디션 볼펜</p>
+                    <p class="price font_t">
+                      <span class="percent">35%</span>
+                      <span>33,750</span>
+                      <span class="discount">55,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img3.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">CARAND</p>
+                    <p class="tit">849 클레임 유어 스타일3 에디션 볼펜</p>
+                    <p class="price font_t">
+                      <span class="percent">35%</span>
+                      <span>33,750</span>
+                      <span class="discount">55,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img4.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">CARAND</p>
+                    <p class="tit">849 클레임 유어 스타일3 에디션 볼펜</p>
+                    <p class="price font_t">
+                      <span class="percent">35%</span>
+                      <span>33,750</span>
+                      <span class="discount">55,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img5.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">CARAND</p>
+                    <p class="tit">만년 볼펜 컨버터(842 전용)</p>
+                    <p class="price font_t">
+                      <span class="percent">30%</span>
+                      <span>33,750</span>
+                      <span class="discount">4,200</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img6.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">PARKER</p>
+                    <p class="tit">어번 프리미엄 컬러 CT 5TH 잉크펜</p>
+                    <p class="price font_t">
+                      <span class="percent">30%</span>
+                      <span>14,000</span>
+                      <span class="discount">20,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img7.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">KAWECO</p>
+                    <p class="tit">카웨코 스포츠 스카이 형광펜 4색</p>
+                    <p class="price font_t">
+                      <span class="percent">30%</span>
+                      <span>34,300</span>
+                      <span class="discount">49,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img8.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">MENURI</p>
+                    <p class="tit">884 인피니트 컬러 볼 사이펜</p>
+                    <p class="price font_t">
+                      <span class="percent">20%</span>
+                      <span>28,800</span>
+                      <span class="discount">36 ,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img9.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">LAMY</p>
+                    <p class="tit">라마 클래식 월드 만년필</p>
+                    <p class="price font_t">
+                      <span class="percent">48%</span>
+                      <span>29,000</span>
+                      <span class="discount">56,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img10.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">TROIKA</p>
+                    <p class="tit">CONSTRUVTION 슬림 볼펜 블랙</p>
+                    <p class="price font_t">
+                      <span class="percent">13%</span>
+                      <span>10,440</span>
+                      <span class="discount">12,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img11.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">PILOT</p>
+                    <p class="tit">PILOT 이로시주쿠 프리미엄 펜</p>
+                    <p class="price font_t">
+                      <span class="percent">13%</span>
+                      <span>21,750</span>
+                      <span class="discount">25,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img12.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">LEUCH</p>
+                    <p class="tit">로이컴 2020 위클리 플래너 12색</p>
+                    <p class="price font_t">
+                      <span class="percent">20%</span>
+                      <span>20,800</span>
+                      <span class="discount">26,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img13.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">ZEBRA</p>
+                    <p class="tit">제브라 클립옴 멀티 B4SA1 멀티</p>
+                    <p class="price font_t">
+                      <span class="percent">20%</span>
+                      <span>6,400</span>
+                      <span class="discount">8,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img14.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">HOTTRA</p>
+                    <p class="tit">HOTTRA PAPER MATE 컬러</p>
+                    <p class="price font_t">
+                      <span class="percent">20%</span>
+                      <span>4,800</span>
+                      <span class="discount">6,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img15.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">MONA</p>
+                    <p class="tit">모마미 플립 컬러 형광 멀티</p>
+                    <p class="price font_t">
+                      <span class="percent">10%</span>
+                      <span>2,700</span>
+                      <span class="discount">3,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="thum">
+                    <img src="images/pd_img16.jpg" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="cont">
+                    <p class="brand">MOONGU</p>
+                    <p class="tit">제브라 0.5mm 블렌 컬러 펜</p>
+                    <p class="price font_t">
+                      <span class="percent">15%</span>
+                      <span>5,100</span>
+                      <span class="discount">6,000</span>
+                    </p>
+                    <div class="info">
+                      <span class="reply">0</span>
+                      <span class="like">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="paging">
+              <a href="" class="btn-allprev">처음</a>
+              <a href="" class="btn-prev">이전</a>
+              <a href="" class="active">1</a>
+              <a href="" class="">2</a>
+              <a href="" class="">3</a>
+              <a href="" class="">4</a>
+              <a href="" class="">5</a>
+              <a href="" class="btn-next">다음</a>
+              <a href="" class="btn-allnext">끝</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button onclick="topFunction();" class="btnTop" title="Go to Top"></button>
+  <footer>
+    <div class="util">
+      <div class="util_cont">
+        <div class="foot_top">
+          <h1><img src="images/logo_footer.png" alt="footer logo"></h1>
+          <ul class="fm">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보취급방침</a></li>
+            <li><a href="">제휴/광고</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이메일수집거부</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="inner">
+      <div class="cont left">
+        <h3>(주)핀첼로</h3>
+        <span>대표이사 : 박주미</span>
+        <span>서울시 종로구 대학고 57 홍익대학교 대학로캠포스 교육동 14층</span>
+        <span>사업자등록번호 : 211-87-00620</span><br>
+        <span>통신판매업 신고 : 제 01-1968호 사업자 정보확인</span>
+        <span>개인정보책임자 : 이문세</span>
+        <span>소비자피해보상보험 SGI 서울보증 서비스 가입 사실 확인</span>
+        <address>COPYRIGHT (C)PINCELLO ALL RIGHTS RESERVED.</address>
+      </div>
+      <div class="cont middle">
+        <ul class="sns">
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="images/icon_instagram.png" alt="인스타그램" width="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="images/icon_facebook.png" alt="페이스북" height="28">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="images/icon_youtube.png" alt="유투브">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cont right">
+        <div class="tit">CUSTOMER</div>
+        <div class="cc_tel">080-022-0153</div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

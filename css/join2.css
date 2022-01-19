@@ -1,0 +1,212 @@
+#wrap.wrapper{
+  color:#303030;
+  font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
+}
+.wrapper #container.cont_login{
+  padding-top:0;
+}
+#container .content{
+  position:relative;
+  width: 100%;
+  min-width: 1260px;
+  min-height: 560px;
+  padding: 116px 0 100px 0;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+.content .logo_area h2{
+  height:190px;
+  line-height: 190px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  background-color: #faf9f7;
+}
+.member .join-step2{
+  margin: 20px auto 0;
+  width: 1200px;
+}
+.member .join-step2 .joinform-field{
+  margin: 59px auto 0;
+  width: 650px;
+}
+.member .join-step2 .joinform-field h3{
+  line-height:20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.member .join-step2 .joinform-field>p{
+  margin-top:7px;
+  text-align: center;
+  color:#999;
+  font-size: 13px;
+  font-weight:300;
+}
+.member .join-step2 .joinform-field .txt-need{
+  margin-top: -17px;
+  color: #666;
+  font-size: 13px;
+  text-align: right;
+}
+.member .join-step2 .joinform-field>p em{
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 3px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.member .join-step2 .joinform-field .txt-need em{
+  display: inline-block;
+  margin-top:3px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.member .join-step2 .joinform-field>ul{
+  margin-top: 17px;
+  padding-top:10px;
+  padding-bottom: 7px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #ccc;
+}
+.member .join-step2 .joinform-field>ul>li{
+  position:relative;
+  padding: 5px 0 5px 158px;
+}
+.member .join-step2 .joinform-field>ul>li:first-child{
+  padding-top:19px;
+}
+.member .join-step2 .joinform-field>ul>li label{
+  line-height:40px;
+}
+.member .join-step2 .joinform-field>ul>li strong{
+  position: absolute;
+  top:5px;
+  left:0;
+  width: 158px;
+  line-height: 50px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+}
+.member .join-step2 .joinform-field>ul>li:first-child strong{
+  top: 19px;
+}
+.member .join-step2 .joinform-field>ul>li strong em{
+  display: inline-block;
+  margin-left: 3px;
+  font-weight: normal;
+}
+.member .join-step2 .joinform-field>ul>li label span{
+  color:#555;
+  font-size: 14px;
+}
+.member .join-step2 .joinform-field>ul>li button{
+  position:absolute;
+  top: 5px;
+  right: 0;
+  padding: 0;
+  width: 138px;
+}
+.member .infotxt{
+  margin: 5px auto 0;
+  width: 405px;
+}
+.member .join-step2 .joinform-field>ul>li .infotxt{
+  margin:3px 0 1px;
+  width: auto;
+}
+.infotxt li{
+  position:relative;
+  padding:4px 0 0 10px;
+  line-height: 20px;
+  color: #555;
+  font-size: 13px;
+  font-weight: 300;
+}
+.infotxt li:first-child{
+  padding-top:0;  
+}
+.member .infotxt li{
+  padding-top:3px;
+  line-height: 19px;
+  color:#999;
+  font-size: 13px;
+  font-weight: 300;
+}
+.infotxt li:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: #616161;
+}
+.infotxt li:first-child:before {
+  top: 8px;
+}
+.member .infotxt li::before{
+  content: "*";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+.member .join-step2 .joinform-field>ul>li input.in-id, .member .join-step2 .joinform-field>ul>li input.in-email{
+  width:344px;
+}
+.member .join-step2 .joinform-field>ul>li.bar{
+  margin-top: 24px;
+  padding-top: 29px;
+  border-top: 1px solid #ccc;
+}
+.member .join-step2 .joinform-field>ul>li.bar strong{
+  top:30px;
+}
+.member .join-step2 .joinform-field>ul>li .txt-agree{
+  margin-top: 22px;
+}
+.member .join-step2 .joinform-field>ul>li .txt-agree strong{
+  top:17px;
+}
+.member .join-step2 .joinform-field>ul>li .txt-agree label{
+  line-height: 29px;
+}
+.member .join-step2 .joinform-field>ul>li .txt-agree label span{
+  color: #000;
+  font-size: 14px;
+}
+.member .join-step2 .joinform-field>ul>li .txt-agree .infotxt{
+  margin-top:10px;
+}
+.member .join-step2 .joinform-field>p label{
+  line-height: 42px;
+}
+.member .join-step2 .joinform-field>p label span{
+  color:#000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-area{
+  position:relative;
+  display: block;
+  font-size: 0;
+}
+.btn-area:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.member .join-step2 .joinform-field .btn-area{
+  margin-top: 24px;
+  text-align: center;
+}
+.member .join-step2 .joinform-field .btn-area button{
+  margin: 0 3px;
+}
